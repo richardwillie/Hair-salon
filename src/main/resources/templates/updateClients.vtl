@@ -1,0 +1,23 @@
+<div class="update-stylist">
+	<h1 class="mb0">Update <span class="text-primary">$client.getClientFirstName() $client.getClientLastName()</span> Client Details</h1>
+    <small><a href="/"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Go Back Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/stylists"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Back to Stylists</a></small>
+	<hr>
+	<div class="update-stylist-form">
+		<form action="/updateClient/$client.getClientId()" method="post" name="updateClient">
+			<div class="form-group mb15">
+            <label class="label">First Name</label>
+            <input type="text" name="clientFirstName" id="clientFirstName" placeholder="$client.getClientFirstName()" class="form-control" />
+         </div>
+			<div class="form-group mb15">
+            <label class="label">Last Name</label>
+            <input type="text" name="clientLastName" id="clientLastName" placeholder="$client.getClientLastName()" class="form-control" />
+         </div>           
+			<div class="form-group mb15">
+            <label class="label">Phone No.</label>
+            <input type="text" name="clientPhoneNo" id="clientPhoneNo" placeholder="$client.getClientPhoneNo()" class="form-control" />
+         </div>        
+         <button type="submit" class="btn btn-primary btn-xs"><i class="fa fa-edit" aria-hidden="true"></i>&nbsp;&nbsp;Update Stylist's Details</button>
+         <button type="reset" class="btn btn-default btn-xs"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Cancel</button>			
+		</form>	
+	</div>
+</div>
