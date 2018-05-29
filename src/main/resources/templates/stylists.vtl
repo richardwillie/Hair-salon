@@ -1,0 +1,18 @@
+<div class="stylists">
+	<h1 class="mb-0"><span class="text-primary">Stylists</span></h1>
+    <small><a href="/"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Go Back Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/addStylist"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Add New Stylist</a></small>
+	<hr>
+	#if ($stylists)
+	<div class="stylist-list mb40">
+		#foreach ($stylist in $stylists)
+		<div>
+			<h3>$stylist.getStylistLastName(), $stylist.getStylistFirstName() <small>($stylist.getStylistDept())</small></h3>
+			<small>Age: <span class="text-primary">$stylist.getStylistAge() yrs</span> | Phone: <span class="text-primary">$stylist.getStylistPhoneNo()</span><!--  | No. of Clients: <span class="text-primary">5</span> --></small><br>
+			<small><a href="viewClients/$stylist.getStylistId()"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;View Clients</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/addClient/$stylist.getStylistId()"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Add Client To This Stylist</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/updateStylist/$stylist.getStylistId()"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Update This Stylist Details</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/deleteStylist/$stylist.getStylistId()"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Delete This Stylist</a></small>			
+		</div>	
+		#end	
+	</div>
+	#else
+  		<p>No Stylists!</p>
+	#end
+</div>
