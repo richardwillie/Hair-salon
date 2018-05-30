@@ -1,0 +1,14 @@
+<div class="intro"><h1 class="mb-0">Clients of $stylist.getstylistname()</h1>
+
+	<div>
+		#foreach ($client in $stylist.getclients())
+		<p>
+			Client Name: $client.getclientname()<br>
+			Client Phone: $client.getclientphone()<br>
+			<form action="/deleteclient">
+				<button type="submit" class="btn btn-success">Delete Stylist</button><br>
+			<form>
+		</p>
+		#end
+	</div>
+</div>
