@@ -1,19 +1,36 @@
-<div class="intro">
-<h1 class="mb-0">Salon
-	</h1>
-	<form action="/add_stylist" method="post">
-		<p>Add Stylist:</p><br>
-		<p>Stylist Name:</p><br>
-		<input class="form-control" type="text" name="stylist_name"><br>
-		<p>Phone Number:</p><br>
-		<input class="form-control" type="text" name="stylist_phone"><br>
-		<p>Stylist Department:</p>
-		<select class="form-control" name="dept">
-			<option value="Styling">Styling</option>
-			<option value="Braiding">Braiding</option>
-			<option value="Nails">Nails</option>
-		</select>
-		<button class="btn btn-success" type="submit">Submit</button>
-	</form>
-	<a class="btn btn-success" href="/stylists">View Stylists</a>
+
+
+<div class ="intro">
+	<h1 class="mb-0">Frumuseţe Hair and Beauty Salon</h1>
+	
+	<div class="jumbotron">
+		<blockquote class="blockqoute-danger" role="alert">
+			<strong>Welcome to Frumuseţe</strong><br>
+			We take care of your hair, because we know its the crown you will always wear.<br>
+
+			<form action="/add_stylist" method="post">
+				<p>Add Stylist:<br>
+				Stylist Name:</p>
+				<input class="form-control" type="text" name="stylist_name"><br>
+				<p>Phone Number:</p>
+				<input class="form-control" type="text" name="stylist_phone"><br>
+				<p>Stylist Department:</p>
+				<select class="form-control" name="dept">
+					<option value="Styling">Styling</option>
+					<option value="Braiding">Braiding</option>
+					<option value="Nails">Nails</option>
+				</select>
+				<br>
+				<button class="btn btn-success" type="submit">Submit</button>
+			</form>
+			<br>
+			<a class="btn btn-success" href="/stylists">View Stylists</a>
+		</blockquote>	
+	</div>
+
+
+
+
+	
+
 </div>

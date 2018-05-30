@@ -1,16 +1,20 @@
 <div class="intro"><h1 class="mb-0">Stylists</h1>
 
-	<div>
+	<div class="jumbotron">
 		#foreach ($stylist in $stylists)
 		<p>
 			Stylist Name: $stylist.getstylistname()<br>
 			Stylist Phone: $stylist.getstylistphone()<br>
 			Stylist Department: $stylist.getdepartment()<br>
-			<a class="btn btn-success" href="/add_client/$stylist.getId()">Add Client to Stylist</a><br>
+			<a class="btn btn-success" href="/add_client/$stylist.getId()">Add Client to Stylist</a>
+			<br>
 			<form action="/deletestylist/$stylist.getId()">
-				<button type="submit" class="btn btn-success">Delete Stylist</button><br>
+				<button type="submit" class="btn btn-success">Delete Stylist</button>
 			<form>
-			<a class="btn btn-success" href="/clients/$stylist.getId()">View Clients</a><br>
+			<br>	
+			
+			<a class="btn btn-success" href="/clients/$stylist.getId()">View Clients</a>
+			<br>
 		</p>
 		#end
 	</div>

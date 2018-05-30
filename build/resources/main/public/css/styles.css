@@ -2,6 +2,8 @@ body {
     background-image: url(../images/image4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #ccc
+    color: black;
 }
 
 .mb12 {
@@ -10,9 +12,23 @@ body {
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
-.header {
-    color: aqua
+.footer{
+	text-align: center;
 }
+
+.form-control{
+	width: 300px
+}
+
+.mb-0{
+	text-align: center;
+	color: black;
+}
+.jumbotron{
+	opacity: 0.75;
+	color: crimson; 
+}
+
